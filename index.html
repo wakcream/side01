@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <!--head contains general info about website-->
   <head>
-    <title>Webpage Test 2</title>
-    <!-- CSS STARTS BELOW, comments can only be written outside of the tag itself -->
-    <style>
-      img {
-        width: 100px;
-        border-radius: 10px;
-        float: left;
-        margin-right: 10px;
-      }
-      .username {
-        font-weight: bold;
-      }
-    </style>
-    <!--CSS ENDS HERE-->
+    <title>My First Website</title>
+    <!--favicons are done by using the LINK tag in the header section-->
+    <link rel="icon" type="image/jpg" href="images/gible.png" />
   </head>
-
+  <!--body contains actual content on the website itself-->
   <body>
-    <img src="images/suklundh.png" alt="An image of Ryomen Sukuna" />
-    <p class="username">@sukuna</p>
-    <p>Ryoiki Tenkai</p>
+    <h1>This is an h1 heading.</h1>
+    <h2>This is an h2 heading.</h2>
+    <h3>This is an h3 heading.</h3>
+    <h4>This is an h4 heading.</h4>
+    <h5>This is an h5 heading.</h5>
+    <!--hr is a horizonal line, like /div in Notion-->
+    <hr />
+    <!--br is a line break.-->
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nam
+      fugit quas nihil magnam eaque officia illum ipsum quasi perspiciatis,
+      soluta debitis error deserunt dignissimos, ipsam nesciunt dolore
+      aspernatur distinctio.
+    </p>
+
+    <!--href is the link itself, target designates how you will navigate (with new tab or not), title indicates the tooltip-->
+    <a href="https://ca.pinterest.com/" target="_blank" title="Goes to google">
+      click me
+    </a>
+    <br />
+
+    <!--you can also provide references to local files in the same folder?-->
+    <a href="lyrics.html">song lyrics</a>
+    <br />
+
+    <!--you can also add commands like mailto-->
+    <a href="mailto:carbonell.joaquin27@gmail.com">email me shit</a>
+    <br />
+
+    <!--images tag is: img src="",alt is alternative text that is displayed if the image itself doesn't print, is also the text that an autoreader tool reads-->
+    <!--you can also turn an image into a hyperlink-->
+    <!--img src can be used for gifs as well-->
+    <a href="https://ca.pinterest.com/pin/1123437069546287347/" target="_blank">
+      <img
+        src="images/otter.jpg"
+        height="200"
+        width="150"
+        alt="This is a picture of a sketch of an otter."
+      />
+    </a>
+
+    <!--audio can be done by surrounding a source attribute with audio tags-->
+    <!--the controls keyword adds controls to the song-->
+    <p>P5X: Gone With The Storm</p>
+    <audio controls>
+      <source
+        src="audios/Persona 5_ The Phantom X OST  Gone With The Storm.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!--videos are implemented through video tags-->
+    <video
+      src="videos/video0 (15).mov"
+      width="500px"
+      height="500px"
+      controls
+    ></video>
+
+    <!--text formatting is done by surrounding a given text with tags, style is done by CSS-->
+    <p>This is normal text.</p>
+    <p>This is <b>bold</b> text.</p>
+    <p>This is <i>italic</i> text.</p>
+    <p>This is <u>underlined</u> text.</p>
+    <p>This is <del>deleted</del> text.</p>
+    <p>This is <big>big</big> text.</p>
+    <p>This is <small>small</small> text.</p>
+    <p>This is <sub>subscript</sub> text.</p>
+    <p>This is <sup>superscript</sup> text.</p>
+    <p>This is <tt>monospaced</tt> text.</p>
+    <p>
+      This is
+      <mark style="background-color: lightgreen">highlighted</mark> text.
+    </p>
+
+    <!--span and div tags-->
+    <!--span: inline(just the line) container, div: block(whole width of the document) container-->
+    <h1><span style="background-color: tomato">This is a span title.</span></h1>
+    <h1><div style="background-color: cyan">This is a div title.</div></h1>
   </body>
 </html>
