@@ -5,9 +5,22 @@
     <title>My First Website</title>
     <!--favicons are done by using the LINK tag in the header section-->
     <link rel="icon" type="image/jpg" href="images/gible.png" />
+
+    <!--META TAGS
+      - placed in head, not body
+      - essentially data of data
+
+    -->
+    <meta name="description" content="Free HTML Tutorial for Beginners">
+    <meta name="keywords" content="HTML, tutorial, Beginners">
+    <meta name="author" content="jiai">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">   <!--This meta tag scales webpage scale to the device-->
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="5">-->
+
   </head>
   <!--body contains actual content on the website itself-->
-  <body>
+  <body style="background-color: lightgray;">
     <h1>This is an h1 heading.</h1>
     <h2>This is an h2 heading.</h2>
     <h3>This is an h3 heading.</h3>
@@ -128,18 +141,53 @@
       <dd>Furries</dd>
     </dl>
 
-    <!--tables-->
+    <!--tables (
+      - <table> makes a table 
+      - <tr> makes a table row 
+      - <th> is table HEADER 
+      - <td> is table DATA)-->
     <h3>Store Hours</h3>
-    <table>
-      <tr>
-        <th>Sunday</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
+    <table bgcolor="black" width="700px">
+      <tr bgcolor="grey" align="center">
+        <th width="100px">Sunday</th>
+        <th width="100px">Monday</th>
+        <th width="100px">Tuesday</th>
+        <th width="100px">Wednesday</th>
+        <th width="100px">Thursday</th>
+        <th width="100px">Friday</th>
+        <th width="100px">Saturday</th>
+      </tr>
+
+      <tr bgcolor="cyan" align="center">
+        <td>Closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>Closed</td>
       </tr>
     </table>
+
+    <!--COLORS
+      - style="color" can be done in rgb, hexidecimal or regular color
+      - style="background-color"
+    -->
+    <h1 style="color: red;">Hello Bro</h1>
+    <h1 style="color:rgb(5, 240, 232);">Hello Bro</h1>
+    <h1 style="color: #28f005;">Hello Bro</h1>
+    <p style="background-color:rgb(222,222,222);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae non modi perspiciatis qui. Maxime eaque repellendus molestias non asperiores exercitationem quaerat, odit voluptas fugiat incidunt sunt quis sequi quia sit.</p>
+  
+    <!--IFRAMES - embed content from another source into an html-->
+    <iframe src="ad.html" style="border: 0;" width="750px" height="250px"></iframe>
+    
+    <!--BUTTONS - -->
+
+    <a href="https://www.google.com/?client=safari">
+      <button style="background-color: royalblue; color: violet; border-radius: 5px;">click me</button>
+    </a>
+  
   </body>
 </html>
+
+
